@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 <h2>Filter</h2>
 在SearchResult組件中建立 clickSortRateDesc / clickSortRateAsc /  clickSortPriceDesc / clickSortPriceAsc 四個function改變setSort這個hook的值，<br/>
-作為評價高低和價格高低的filter，sort的值會傳入fetchList這個fetch api的function中對應的query
+作為評價高低和價格高低的filter，sort的值會傳入fetchList這個fetch api的function中對應的query，預設是currentPage=1&rowPerPage=10&sortBy=rating_desc
 
 <h2>Pagination</h2>
 Pagination是換頁的組件，傳入setCurrentPage這個hook做換頁的功能

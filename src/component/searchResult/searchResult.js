@@ -15,7 +15,7 @@ const SearchResult = ({ history }) => {
     const [currentPage, setCurrentPage] = useState(1);
 
 
-    // Set rowPerPage & totalItem as fake search response
+    // Set rowPerPage & totalItem as fake search response for page and item count setting
     const rowPerPage = 10;
     const totalItem = 100;
 
@@ -42,8 +42,8 @@ const SearchResult = ({ history }) => {
 
     const clickSortPriceAsc = () => {
         setSort("price_asc")
-
     }
+
     const historyChange = async () => {
         const rawData = await fetchList();
         const list = await rawData.data.data.tour_list

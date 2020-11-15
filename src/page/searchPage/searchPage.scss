@@ -1,0 +1,30 @@
+$color-background: #eeeeee;
+$color-white: #ffffff;
+$color-blue: #0277bd;
+
+.searchPage {
+  background-color: $color-background;
+  font-family: "Roboto", sans-serif, monospace, monospace;
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0 4%;
+
+    .banner {
+      flex: 0 0 auto;
+    }
+
+    .mainContent {
+      flex: 1 1 auto;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .search-container {
+      padding: 0;
+    }
+  }
+}

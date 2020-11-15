@@ -1,0 +1,12 @@
+.searchResult {
+  min-height: 400vh;
+  min-width: 75%;
+  margin: 3px;
+  margin-left: 2%;
+}
+
+@media (max-width: 800px) {
+  .leftSidebar {
+    min-width: 95vw;
+  }
+}

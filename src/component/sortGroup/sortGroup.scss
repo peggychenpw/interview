@@ -1,0 +1,85 @@
+.sortBox {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  //set width for each section total:100%
+  .btn-group,
+  .duration,
+  .departureDate {
+    width: 23%;
+    font-size: 16px;
+  }
+
+  .sort {
+    width: 8%;
+    padding: 5px;
+    cursor: not-allowed;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .btn-group {
+    .dropdown-toggle {
+      width: 100%;
+    }
+  }
+
+  Button {
+    background-color: #ffffff;
+    color: #6c757d;
+    border: #ffffff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: none;
+  }
+
+  Button:active,
+  Button:focus {
+    background-color: #6c757d !important;
+    color: #ffffff;
+    outline: none;
+    box-shadow: none;
+  }
+
+  //dropdown's style
+  .dropdown {
+    background-color: #ffffff !important;
+    color: #6c757d;
+    border: #ffffff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: none;
+
+    //bootstrap dropdown's default button
+
+    button:hover {
+      background-color: #f5f5f5;
+    }
+
+    button:focus {
+      color: #ffffff;
+      background-color: #6c757d;
+    }
+
+    .dropdown-item {
+      display: block;
+      color: #6c757d;
+      border: none;
+    }
+
+    .dropdown-item:active,
+    .dropdown-item:after {
+      display: block;
+      background-color: #6c757d !important;
+      color: #ffffff;
+      width: 100%;
+      border: none;
+    }
+  }
+
+  .departureDate:hover,
+  .duration:hover {
+    background-color: #f5f5f5;
+  }
+}

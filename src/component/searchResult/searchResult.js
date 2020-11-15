@@ -11,7 +11,7 @@ import Pagination from '../pagination/pagination'
 const SearchResult = ({ history }) => {
     const [loading, setLoading] = useState(false);
     const [tourList, setTourList] = useState([])
-    const [sort, setSort] = useState("rate_desc")
+    const [sort, setSort] = useState("rating_desc")
     const [currentPage, setCurrentPage] = useState(1);
 
 

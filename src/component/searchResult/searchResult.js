@@ -59,8 +59,8 @@ const SearchResult = ({ history }) => {
             setLoading(true);
             await historyChange();
             setLoading(false);
-            console.log(currentPage)
-            console.log(tourList)
+            // console.log(currentPage)
+            // console.log(tourList)
         })()
     }, [sort, currentPage])
 

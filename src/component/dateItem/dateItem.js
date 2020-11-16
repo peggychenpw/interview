@@ -10,10 +10,10 @@ const DateItem = (props) => {
             ['日', '一', '二', '三', '四', '五', '六'][dayOfWeek];
     }
 
-    const weekday = getDayOfWeek(date)
+    const weekday = getDayOfWeek(tourDateString)
     const formatDate = `${date}(${weekday})`
 
-    // console.log(tourDateString)
+
     return (
         <>
             {formatDate}

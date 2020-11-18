@@ -1,5 +1,8 @@
 # Interview project for Tripresso
 
+### Preview
+https://tripresso.vercel.app/search?currentPage=9&rowPerPage=10&sortBy=rating_desc
+
 ### `yarn start`
 
 Runs the app in the development mode.\

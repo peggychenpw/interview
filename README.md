@@ -27,5 +27,5 @@ Pagination是換頁的組件，從父層傳入setCurrentPage這個hook做換頁�
 <h2>切換分頁時滑回最上方</h2>
 在useEffect中加入一個叫rollBack的函式，讓畫面重新渲染後回到回到上方，能夠從頭看到最新更新的旅遊資料。<br/>
  const rollBack = () => {<br/>
-        setTimeout(() => window.scrollTo(0, 270), 100)<br/>
+        setTimeout(() => window.scrollTo(0,0), 100)<br/>
     }<br/>

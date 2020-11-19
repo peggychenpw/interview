@@ -1,9 +1,12 @@
 import React from 'react';
 import { withRouter } from "react-router-dom"
+import "./pagination.scss"
 
-const Pagination = ({ history, sortBy, rowPerPage, totalItem, paginate }) => {
+const Pagination = (props) => {
+
+    const { history, sortBy, rowPerPage, totalItem, paginate, currentPage } = props
+
     const pageNumbers = [];
-
     for (let i = 1; i <= Math.ceil(totalItem / rowPerPage); i++) {
         pageNumbers.push(i);
     }
@@ -21,8 +24,8 @@ const Pagination = ({ history, sortBy, rowPerPage, totalItem, paginate }) => {
         <nav>
             <ul className='pagination'>
                 {pageNumbers.map(number => (
-                    <li key={number} className='page-item' style={{ cursor: 'pointer' }}>
-                        <div onClick={() => clickPage(number)} className='page-link' >
+                    <li key={number} className='page-li'>
+                        <div onClick={() => clickPage(number)} className={currentPage === number ? 'page-div-current' : 'page-div'}>
                             {number}
                         </div>
                     </li>

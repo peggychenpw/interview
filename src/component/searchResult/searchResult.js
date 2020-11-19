@@ -30,18 +30,22 @@ const SearchResult = ({ history }) => {
 
     const clickSortRateDesc = () => {
         setSort("rating_desc")
+        setCurrentPage(1)
     }
 
     const clickSortRateAsc = () => {
         setSort("rating_asc")
+        setCurrentPage(1)
     }
 
     const clickSortPriceDesc = () => {
         setSort("price_desc")
+        setCurrentPage(1)
     }
 
     const clickSortPriceAsc = () => {
         setSort("price_asc")
+        setCurrentPage(1)
     }
 
     const historyChange = async () => {
@@ -54,13 +58,16 @@ const SearchResult = ({ history }) => {
         })
     }
 
+    const rollBack = () => {
+        setTimeout(function () { window.scrollTo(0, 270) }, 100)
+    }
+
     useEffect(() => {
         (async () => {
             setLoading(true);
             await historyChange();
             setLoading(false);
-            // console.log(currentPage)
-            // console.log(tourList)
+            rollBack();
         })()
     }, [sort, currentPage])
 
@@ -73,7 +80,7 @@ const SearchResult = ({ history }) => {
                 clickSortPriceDesc={clickSortPriceDesc} clickSortPriceAsc={clickSortPriceAsc}
             />
             <TourList currenTourList={tourList} loading={loading} />
-            <Pagination sortBy={sort} setSort={setSort} currentPage={currentPage} rowPerPage={rowPerPage} totalItem={totalItem} paginate={paginate} />
+            <Pagination sortBy={sort} setSort={setSort} currentPage={currentPage} rowPerPage={rowPerPage} totalItem={totalItem} paginate={paginate} className='pagination' />
         </div>
 
     )

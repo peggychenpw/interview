@@ -1,3 +1,25 @@
-nav {
-  margin: 0 auto;
+.page-li {
+  padding: 0 2px;
+
+  .page-div {
+    cursor: pointer;
+    color: #373a3c;
+    padding: 15px 18px;
+  }
+
+  .page-div:hover {
+    cursor: pointer;
+    padding: 15px 18px;
+    background-color: #a5a6a7;
+    color: white;
+  }
+
+  .page-div-current,
+  .page-div-current:hover {
+    padding: 15px 18px;
+    color: black;
+    cursor: default;
+    background-color: #373a3c;
+    color: white;
+  }
 }

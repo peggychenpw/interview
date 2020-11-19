@@ -59,7 +59,7 @@ const SearchResult = ({ history }) => {
     }
 
     const rollBack = () => {
-        setTimeout(function () { window.scrollTo(0, 270) }, 100)
+        setTimeout(function () { window.scrollTo(0, 270); console.log('settimeout') }, 100)
     }
 
     useEffect(() => {
